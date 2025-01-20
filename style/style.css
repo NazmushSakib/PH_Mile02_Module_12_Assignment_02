@@ -244,6 +244,13 @@ hr{
   margin-bottom: 60px;
 }
 
+marquee{
+  font-size: 2rem;
+  text-align: center;
+  /* margin: 0 80vw; */
+  border: 1px solid orange;
+}
+
 /* ! Curriculum section End */
 
 
