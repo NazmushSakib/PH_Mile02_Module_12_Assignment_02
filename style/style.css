@@ -27,8 +27,10 @@ html {
 
 body {
   background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -39,11 +41,6 @@ body {
 }
 
 /*! shared style start*/
-header {
-  
-}
-
-/*! shared style end*/
 .black-col {
   color: black;
 }
@@ -53,23 +50,33 @@ header {
 .para-col {
   color: #808080;
 }
+hr{
+  border: 1px solid #f7f7f7;
+}
 
 .flex{
   display: flex;
 }
-.navbar{
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 .btn{
   height: 50px;
   /* width: 197px; */
   padding: 10px 60px;
   border-radius: 12px;
   border: none;
-  margin: 26px;
+  margin-top: 26px;
   color: #fff;
   cursor: pointer;
+  background-color: black;
+}
+
+
+/*! shared style end*/
+
+.navbar,
+.banner{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .link-btn-font{
@@ -88,7 +95,9 @@ header {
 .nav-links li a {
   text-decoration: none;
 }
-
+.icon{
+  display: none;
+}
 
 .navbar{
   /* display: grid;
@@ -108,7 +117,7 @@ header {
   margin: 36px auto;
 }
 .btn-contact{
-  background-color: var(--orange);
+  background-color: orange;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -117,8 +126,8 @@ header {
   color: var(--orange);
 }
 
-#about{
-  color: skyblue;
+.sky-blue{
+  color: #01acfd;
 }
 
 #facilities{
@@ -129,3 +138,56 @@ header {
 }
 
 /*! Navbar End */
+
+/*! Banner Section Start */
+.banner-text{
+  
+  max-width: 640px;
+}
+.banner-text h1,span{
+  font-weight: bold;
+  font-size: 5.6rem;
+}
+.banner-description{
+  font-size: 2rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.banner{
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.banner-image img{
+  width: 100%;
+}
+
+
+@media screen and (max-width : 576px) {
+    .nav-links,
+    .brand,
+    .btn-contact{
+      display: none;
+    }
+    .navbar{
+      border: 1px solid orange;
+    }
+    .icon{
+      display: inline;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-right: 16px;
+    }
+    .logo-container{
+     margin: 12px 16px; 
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner-text{
+      text-align: center;
+    }
+  }
+}
