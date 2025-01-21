@@ -43,7 +43,8 @@ body {
 /*! shared style start*/
 .navbar,
 .banner,
-.curriculum{
+.curriculum,
+.our-stories{
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -146,8 +147,6 @@ hr{
 /*! Navbar End */
 
 /*! Banner Section Start */
-.banner-text{
-  
   max-width: 640px;
 }
 .banner-text h1,span{
@@ -247,11 +246,16 @@ hr{
 marquee{
   font-size: 2rem;
   text-align: center;
-  /* margin: 0 80vw; */
+  margin: 0 80px;
   border: 1px solid orange;
 }
 
 /* ! Curriculum section End */
+
+/*! Our stories section start */
+.our-stories{
+
+}
 
 
 @media screen and (max-width : 576px) {
