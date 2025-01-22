@@ -220,7 +220,7 @@ hr{
 .card h5{
   font-weight: bold;
   font-size: 15.09px;
-  
+  cursor: pointer;
 }
 
 #blue{
@@ -253,6 +253,15 @@ marquee{
   text-align: center;
   
   border: 1px solid orange;
+}
+
+.pre:hover{
+  background-color: #01ACFD;
+  cursor: pointer;
+}
+.next:hover{
+  background-color: #01ACFD;
+  cursor: pointer;
 }
 
 /* ! Curriculum section End */
@@ -355,11 +364,85 @@ main{
 .story-btn{
   text-align: center;
   margin-top: 80px;
+  padding-bottom: 60px;
+}
+/*! Our stories end */
+
+
+
+/* !Footer Section start */
+footer{
+  background-color: #01ACFD;
+  color: white;
+}
+
+.footer-section{
+  padding-top: 123px;
+}
+
+.footer-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 170px;
 }
 
 
-/*! Our stories end */
+#cat-logo{
+  color: white;
+}
+.footer-brand{
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
 
+}
+
+.footer-description-card{
+  width: 400px;
+}
+.footer-para{
+  font-size: 2rem;
+}
+
+.about-school-heading{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-font{
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  line-height: 2;
+}
+
+.keep{
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.social-logo-image-container{
+  display: flex;
+  gap: 11px;
+  margin-bottom: 40px;
+}
+
+.footer-links li {
+  list-style: none;
+}
+.footer-links li a {
+  text-decoration: none;
+}
+
+
+
+/* !Footer Section end */
 
 @media screen and (max-width : 576px) {
     .nav-links,
@@ -399,16 +482,6 @@ main{
       max-width: 390px;
     }
 
-    /* .small-image-card-container,
-    .small-card,
-    /* .big-image,  */
-    /* .image-button { */
-    /* .big-image>img{ */
-    
-      /* transform: scale(0.60); */
-    /* } */
-
-
     .big-image>img{
       width: 100%;
     }
@@ -441,5 +514,14 @@ main{
       margin-top: 30px;
     }
 
+    .footer-container{
+      flex-direction: column;
+      padding-left: 20px;
+      gap: 32px;
+    }
+
+    .footer-brand{
+      padding-left: 0px;
+    }
   }
 }
