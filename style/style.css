@@ -89,6 +89,13 @@ hr{
   margin-bottom: 80px;
 }
 
+.curriculum,
+.our-stories{
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*! shared style end*/
 
 /*! Navbar Style */
@@ -147,6 +154,8 @@ hr{
 /*! Navbar End */
 
 /*! Banner Section Start */
+.banner-text{
+  
   max-width: 640px;
 }
 .banner-text h1,span{
@@ -171,11 +180,6 @@ hr{
 /*! Banner Section End */
 
 /* ! Curriculum section Start */
-.curriculum{
-  background-image: url(../assets/bg.png);
-  /* background-size: 100vw; */
-  background-repeat: no-repeat;
-}
 
 
 .card{
@@ -244,25 +248,125 @@ hr{
 }
 
 marquee{
+  margin-top: 75px;
   font-size: 2rem;
   text-align: center;
-  margin: 0 80px;
+  
   border: 1px solid orange;
 }
 
 /* ! Curriculum section End */
 
-/*! Our stories section start */
-.our-stories{
+/*! Our stories start */
 
+.imgage-card-container{
+  justify-content: center;
+  /* align-items: center; */
+  gap: 18.73px;
 }
+
+
+.image-card{
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;  /*42*/
+}
+
+.big-card{
+  width: 540.27px;
+  height: 630.52px;
+}
+
+.big-image img{
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.image-card-title{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 38.3px;
+  margin: 5px 40px 40px;
+}
+
+.big-img-description{
+  margin-bottom: 40px;
+  line-height: 28px;
+  color : #666666;
+  padding-bottom: 34px;
+}
+
+.image-btn{
+  border-radius: 48px;
+  font-family: var(--para-font);
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  position: relative;
+  top : -30px;
+  border: none;
+}
+#cyan{
+  background-color: #3CD8E8;
+  padding: 15px 19px;
+  margin-left : 40px;
+}
+
+
+
+
+.small-card{
+  width: 291px;
+  height: 302px;
+}
+
+.greenish{
+  background-color: #95B226;
+  padding: 6px 18px;
+  margin-left : 30px;
+}
+
+.small-image-card-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 38px;
+  line-height: 28px;
+}
+
+#purple-btn{
+  background-color: #5D58F0;
+}
+
+.small-image-card-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 19.17px;
+}
+
+main{
+  
+  background-image: linear-gradient(360deg, rgba(254,163,1,0.3) 1%, rgba(247,247,247,1) 40%), url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-btn{
+  text-align: center;
+  margin-top: 80px;
+}
+
+
+/*! Our stories end */
 
 
 @media screen and (max-width : 576px) {
     .nav-links,
     .brand,
     .btn-contact,
-    .icon-image-container{
+    .icon-image-container,
+    .big-card {
       display: none;
     }
     .navbar{
@@ -287,5 +391,55 @@ marquee{
     .card-container{
       flex-direction: column;
     }
+    .small-image-card-container{
+      grid-template-columns: repeat(2, 1fr);
+      /* justify-items: center; */
+      column-gap: 11px;
+      row-gap: 11px;
+      max-width: 390px;
+    }
+
+    /* .small-image-card-container,
+    .small-card,
+    /* .big-image,  */
+    /* .image-button { */
+    /* .big-image>img{ */
+    
+      /* transform: scale(0.60); */
+    /* } */
+
+
+    .big-image>img{
+      width: 100%;
+    }
+    .small-image-card-title{
+      /* padding: 22px; */
+      font-size: 9.13px;
+      line-height: 17px;
+      padding-left: 22px;
+    }
+
+    .image-btn{
+      font-size: 0.9rem;
+      line-height: 1.5;
+      position: relative;
+      top : -20px;
+      border: none;
+    }
+    .small-card{
+      width: 173.27px;
+      height: 180px;
+    }
+    .greenish{
+      margin-left: 22px;
+    }
+    #our-stories-heading{
+      margin-bottom: 40px;
+    }
+    .story-btn{
+      text-align: center;
+      margin-top: 30px;
+    }
+
   }
 }
